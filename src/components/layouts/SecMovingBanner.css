@@ -1,0 +1,28 @@
+.sec-moving-banner{
+    width: 100%;
+    overflow: hidden;
+    padding: 3px 0;
+    display: flex;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.sec-content{
+  white-space: nowrap;
+animation: slide 4s linear infinite;
+}
+.sec-content span{
+  padding: 0 15px;
+  font-weight: bolder;
+  font-size: 60px;
+  color: black;
+}
+
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}

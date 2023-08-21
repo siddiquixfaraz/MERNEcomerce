@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Header.css'
 import { CiSearch, CiUser } from "react-icons/ci";
+import Cart from '../../Cart/Cart';
 
 const Header = () => {
+
+    const [cart, setCart] = useState(false);
+    const handleCart = () =>{
+        setCart(true)
+    }
+
   return (
+    <>
     <div className="header">
         <div className="header-left">
             <div className="brand-logo">
@@ -23,9 +31,11 @@ const Header = () => {
                 <input type="text" placeholder='SEARCH' />
             </div>
             <span><CiUser/></span>
-            <a href="/" className='cart'>CART</a>
+            <button className='cart' onClick={()=>setCart(true)} >CART</button>
         </div>
     </div>
+    {cart && <Cart setCart={setCart}/>}
+    </>
   )
 }
 

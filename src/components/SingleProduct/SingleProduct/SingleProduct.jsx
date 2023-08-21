@@ -47,7 +47,7 @@ const SingleProduct = () => {
         </div>
       </div>
     </div>
-<SecMovingBanner title="YOU MAY ALSO LOVE"/>
+<SecMovingBanner title="YOU MAY ALSO LOVE" emotes="😍"/>
     <div className='related-product'>
       
       <div className="product-section">

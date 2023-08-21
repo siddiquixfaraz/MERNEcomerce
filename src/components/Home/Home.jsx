@@ -11,7 +11,7 @@ const Home = () => {
     <>
     <TopMovingBanner/>
     <UncontrolledExample/>
-    <SecMovingBanner title="TRENDING"/>
+    <SecMovingBanner title="TRENDING" emotes="🔥"/>
     <PopularProduct/>
     </>
   )
